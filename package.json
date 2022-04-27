@@ -1,0 +1,23 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "API Endpoint and github actions Intro in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/.bin/jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unciafidelis/FizzBuzz.git"
+  },
+  "keywords": [],
+  "author": "Alejandro Morgan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unciafidelis/FizzBuzz/issues"
+  },
+  "homepage": "https://github.com/unciafidelis/FizzBuzz#readme",
+  "devDependencies": {
+    "jest": "^28.0.2"
+  }
+}
