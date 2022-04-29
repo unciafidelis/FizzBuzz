@@ -3,7 +3,7 @@ const explorers = new Reader
 const ExplorerService = require("./../lib/services/ExplorerService")
 const XService = new ExplorerService
 describe("Testing class Explorer Service", () => {
-    test("1) Filter by Mission", () => {
+    test('1) Filter by Mission', () => {
         expect(XService.filterByMission(explorers.readJsonPath("./explorers.json"), "node")).toStrictEqual(
             [
                 {
@@ -127,8 +127,20 @@ describe("Testing class Explorer Service", () => {
                 ] 
         )
     })
-    test("2) Get the amount of explorers by mission", () => {
+    test('2) Get the amount of explorers by mission', () => {
       expect(XService.getAmountOfExplorersByMission(explorers.readJsonPath("./explorers.json"), "node")).toBe(10)
     })
-    
+    test('3) get the explorers usernames by mission', () => {
+      expect(XService.getExplorersUsernamesByMission(explorers.readJsonPath("./explorers.json"), "node")).toStrictEqual(
+      ["ajolonauta1", 
+      "ajolonauta2", 
+      "ajolonauta3", 
+      "ajolonauta4", 
+      "ajolonauta5", 
+      "ajolonauta11", 
+      "ajolonauta12", 
+      "ajolonauta13", 
+      "ajolonauta14",  
+      "ajolonauta15"])
+    })
 })
