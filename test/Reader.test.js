@@ -8,7 +8,7 @@ describe("Unit Tests for reader class", () => {
         //Code validation
         expect(explorers.readJsonPath("./explorers.json")).toStrictEqual([
             {
-              "name": "Woopa12",
+              "name": "Woopa1",
               "githubUsername": "ajolonauta1",
               "score": 1,
               "mission": "node",
