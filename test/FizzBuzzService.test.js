@@ -1,28 +1,28 @@
-const FizzBuzzServices = require('./../lib/services/FizzBuzzService')
-const FizzBuzzService = new FizzBuzzServices
+const FizzBuzzServices = require("./../lib/services/FizzBuzzService");
+const FizzBuzzService = new FizzBuzzServices;
 describe("Testing FizzBuzz Service", () => {
-    test('1) apply validation in explorer 1', () => {
-        const explorer1 = {name: "Explorer1", score: 1}
+    test("1) apply validation in explorer 1", () => {
+        const explorer1 = {name: "Explorer1", score: 1};
         expect(FizzBuzzService.applyValidationInExplorer(explorer1)).toStrictEqual(
             {name: "Explorer1", score: 1, trick: 1} 
-        )
-    })
-    test('2) apply validation in explorer 3', () => {
-        const explorer3 = {name: "Explorer3", score: 3}
+        );
+    });
+    test("2) apply validation in explorer 3", () => {
+        const explorer3 = {name: "Explorer3", score: 3};
         expect(FizzBuzzService.applyValidationInExplorer(explorer3)).toStrictEqual(
             {name: "Explorer3", score: 3, trick: "FIZZ"} 
-        )
-    })
-    test('3) apply validation in explorer 5', () => {
-        const explorer5 = {name: "Explorer5", score: 5}
+        );
+    });
+    test("3) apply validation in explorer 5", () => {
+        const explorer5 = {name: "Explorer5", score: 5};
         expect(FizzBuzzService.applyValidationInExplorer(explorer5)).toStrictEqual(
             {name: "Explorer5", score: 5, trick: "BUZZ"} 
-        )
-    })
-    test('4) apply validation in explorer 15', () => {
-        const explorer15 = {name: "Explorer15", score: 15}
+        );
+    });
+    test("4) apply validation in explorer 15", () => {
+        const explorer15 = {name: "Explorer15", score: 15};
         expect(FizzBuzzService.applyValidationInExplorer(explorer15)).toStrictEqual(
             {name: "Explorer15", score: 15, trick: "FIZZBUZZ"} 
-        )
-    })
-})
+        );
+    });
+});
