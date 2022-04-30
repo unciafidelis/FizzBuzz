@@ -143,4 +143,7 @@ describe("Testing ExplorerController class", () => {
     test('6) apply validation in number 5', () => {
         expect(XController.getApplyValidationInNumber(5)).toBe("BUZZ")
     })
+    test('7) apply validation in number 15', () => {
+        expect(XController.getApplyValidationInNumber(15)).toBe("FIZZBUZZ")
+    })
 });
