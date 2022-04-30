@@ -21,6 +21,7 @@
     "jest": "^28.0.3"
   },
   "dependencies": {
+    "jest-environment-jsdom": "^28.0.2",
     "latest-version": "^6.0.0",
     "npm": "^8.8.0"
   }
