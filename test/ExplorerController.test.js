@@ -134,4 +134,7 @@ describe("Testing ExplorerController class", () => {
             "ajolonauta11", "ajolonauta12", "ajolonauta13", "ajolonauta14", "ajolonauta15"]
         )
     })
+    test('3) get explorers amount by mission', () => {
+        expect(XController.getExplorersAmountByMission("node")).toStrictEqual(10)
+    })
 })
