@@ -2,9 +2,9 @@ const ExplorerService = require("./../lib/services/ExplorerService")
 const FizzBuzzService = require("./../lib/services/FizzBuzzService")
 const Reader = require("./../lib/utils/Reader")
 const ExplorerController = require("./../lib/controllers/ExplorerController")
+XController = new ExplorerController
 describe("Testing ExplorerController class", () => {
     test('1) get explorers by mission', () => {
-        XController = new ExplorerController
         expect(XController.getExplorerByMission("node")).toStrictEqual(
             [
                 {
@@ -126,6 +126,12 @@ describe("Testing ExplorerController class", () => {
                     ]
                 }
             ] 
+        )
+    })
+    test('2) get explorers usernames by mission', () => {
+        expect(XController.getExplorersUsernamesByMission("node")).toStrictEqual(
+            ["ajolonauta1","ajolonauta2","ajolonauta3","ajolonauta4","ajolonauta5", 
+            "ajolonauta11", "ajolonauta12", "ajolonauta13", "ajolonauta14", "ajolonauta15"]
         )
     })
 })
