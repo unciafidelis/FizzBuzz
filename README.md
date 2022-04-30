@@ -1,7 +1,7 @@
 # FizzBuzz
 API Endpoint and github actions Intro in Node.js
 
-#### Important fixes on package.json
+#### Important fixes on github actions issue
 
 1. Downgrade in package.json of jest
 2. elimination of dependencies node and latest
