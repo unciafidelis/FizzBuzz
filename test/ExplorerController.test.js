@@ -127,5 +127,5 @@ describe("Testing ExplorerController class", () => {
                 }
             ] 
         )
-    }) 
+    })
 })
