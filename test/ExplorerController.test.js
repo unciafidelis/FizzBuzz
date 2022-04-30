@@ -5,7 +5,7 @@ const ExplorerController = require("./../lib/controllers/ExplorerController")
 XController = new ExplorerController
 describe("Testing ExplorerController class", () => {
     test('1) get explorers by mission', () => {
-        expect(XController.getExplorerByMission("node")).toStrictEqual(
+        expect(XController.getExplorersByMission("node")).toStrictEqual(
             [
                 {
                     "name": "Woopa1",
