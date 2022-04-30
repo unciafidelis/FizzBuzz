@@ -134,4 +134,7 @@ describe("Testing ExplorerController class", () => {
     test("3) get explorers amount by mission", () => {
         expect(XController.getExplorersAmountByMission("node")).toStrictEqual(10);
     });
+    test('4) apply validation in number 1', () => {
+        expect(XController.getApplyValidationInNumber(1)).toBe(1)
+    })
 });
