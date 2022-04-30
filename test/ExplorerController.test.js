@@ -134,16 +134,16 @@ describe("Testing ExplorerController class", () => {
     test("3) get explorers amount by mission", () => {
         expect(XController.getExplorersAmountByMission("node")).toStrictEqual(10);
     });
-    test('4) apply validation in number 1', () => {
-        expect(XController.getApplyValidationInNumber(1)).toBe(1)
-    })
-    test('5) apply validation in number 3', () => {
-        expect(XController.getApplyValidationInNumber(3)).toBe("FIZZ")
-    })
-    test('6) apply validation in number 5', () => {
-        expect(XController.getApplyValidationInNumber(5)).toBe("BUZZ")
-    })
-    test('7) apply validation in number 15', () => {
-        expect(XController.getApplyValidationInNumber(15)).toBe("FIZZBUZZ")
-    })
+    test("4) apply validation in number 1", () => {
+        expect(XController.getApplyValidationInNumber(1)).toBe(1);
+    });
+    test("5) apply validation in number 3", () => {
+        expect(XController.getApplyValidationInNumber(3)).toBe("FIZZ");
+    });
+    test("6) apply validation in number 5", () => {
+        expect(XController.getApplyValidationInNumber(5)).toBe("BUZZ");
+    });
+    test("7) apply validation in number 15", () => {
+        expect(XController.getApplyValidationInNumber(15)).toBe("FIZZBUZZ");
+    });
 });
